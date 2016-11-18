@@ -2,4 +2,6 @@
     <string name="app_name">Intent</string>
     <string name="btnText">Send</string>
     <string name="TextHint">Введите сообщение</string>
+    <string name="SendToActivity1">Send to Activity1</string>
+    <string name="SendToActivity2">Send to Activity2</string>
 </resources>
