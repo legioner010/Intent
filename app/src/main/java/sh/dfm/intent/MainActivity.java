@@ -20,9 +20,20 @@ public class MainActivity extends AppCompatActivity {
         String message= messageView.getText().toString();
 
         Intent intent = new Intent(this, SecondActivity.class);
-        //intent.putExtra(SecondActivity.EXTRA_MESSAGE, message);
         intent.putExtra(SecondActivity.EXTRA_MESSAGE,message);
-        startActivity(intent);
+
+
+//   Verufy that intent will resilve to an activity
+        if(intent.resolveActivity(getPackageManager()) != null){
+            startActivity(intent);
+        }
+
+
+
+//        Intent intent = new Intent(Intent.ACTION_PICK);
+//        intent.setType("*/*");
+
+      //  startActivity(intent);
 
 
     }
